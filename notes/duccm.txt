@@ -5,3 +5,9 @@ Creation-Date: 2014-09-28T15:48:06+07:00
 ====== duccm ======
 Created Sunday 28 September 2014
 
+28/09
+- Giới thiệu, trao đổi, thảo luận một số vấn đề khi tìm hiểu về Machine Learning.
+- Cài đặt các công cụ cần thiết cho việc học: skype, git, zim-wiki, ssh và tạo ssh key.
+- Clone repo trên github sử dụng git thông qua ssh, sử dụng một số lệnh như git status, git pull, git push.
+- Hiểu khái quát về Học máy. Hiểu thế nào là học có giám sát và học không có giám sát.
+- Ở nhà: đọc các slide bài giảng, bao gồm cây quyết định. Tìm hiểu thêm về Data Science, Pattern recognition,...
