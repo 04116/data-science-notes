@@ -5,3 +5,46 @@ Creation-Date: 2014-09-28T15:43:38+07:00
 ====== cuongth ======
 Created Sunday 28 September 2014
 
+
+===== git =====
+http://git-scm.com/book/vi		<= tài liệu tiếng Việt vẫn hơn. Xây dựng tài liệu.
+
+__dùng lệnh update unchange để không theo dõi file ở local__
+
+git update-index --assume-unchanged 
+
+
+**# check out branch**
+git checkout -b jcr origin/jcr
+
+
+git reset		vs 		git revert
+
+
+
+
+**update ignore**
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working"
+
+
+
+
+git stash		<= keo' file thay doi tu branch nay sang branch khac hoac giu thay doi de cap nhat commit khac. Sau khi pop se tu dong gop cac file lai, neu co loi thi thong bao.
+
+git update-index --assume-unchanged		<= xem nhu file nay khong thay doi. Khi tren origin repo co' commit file nay, thuc hien pull ve se hien thong bao loi yeu cau phai checkout hoac commit, stash
+
+
+
+git add 
+
+git commit -m  /mot so file ko day len
+
+git commit -am // day tat
+
+
+git push origin "ten branch"
+
+git pull --rebase origin "ten branch"
+
