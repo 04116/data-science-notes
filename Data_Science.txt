@@ -1,0 +1,272 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-09-28T14:54:38+07:00
+
+====== Data Science ======
+Created Sunday 28 September 2014
+
+===== trao đổi =====
+__T-P-E__
+* thể hiện rõ trong bài toán phân loại.
+* **trong bài toán phân cụm thì như thế nào?**
+
+học có giám sát vs học không có giám sát
+
+
+Question: thế tức là cả 2 đều là cải thiện hiệu suất nhưng theo 2 cách và 2 mục đích hoàn toàn khác nhau đúng k ạ
+
+Answer: cái T-P-E kia anh thấy nó có vẻ gắn cứng với việc cải thiện hiệu suất. Còn học không giám sát thì lại làm nhiệm vụ khác.
+em có thể thấy mục đích, điều kiện của học có giám sát và không có giám sát ở L11, trang 3
+còn việc định nghĩa T-P-E kia thì để anh suy nghĩ đã
+
+**=> câu trả lời:**
+* **Machine learning** __focuses on prediction__, __based on known properties learned from the training data.__
+* **Data mining** __focuses on the discovery__ of (previously) __unknown properties in the data__. This is the analysis step of Knowledge Discovery in Databases.
+
+__sự phát triển, đặc biệt trong lĩnh vực công nghệ dẫn đến sự kết hợp giữa các phương pháp. Các định nghĩa dần trở nên mềm dẻo, không cứng ngắc.__
+
+
+
+
+
+
+
+
+===== kế hoạch thực hiện =====
+__ghi chú trong quá trình viết kế hoạch__
+- đi theo con đường khác với giáo trình của thầy Nguyễn Nhật Quang.
+- chọn con đường có tính ứng dụng cao, __có khả năng làm được.__
+- vấn đề, danh sách phương án đề xuất, đánh giá, lựa chọn
+
+**Học máy**
+
+**Mục đích, mục tiêu**
+1. Nắm được khái niệm học máy.
+- Hiểu được nguyên lí hoạt động.
+- Trường hợp sử dụng, ưu nhược điểm.
+- Cách thức sử dụng, ứng dụng.
+2. Viết tài liệu đào tạo.
+3. Thực hiện các chương trình, các project nhỏ.
+
+**Kế hoạch thực hiện**
+- Tài liệu tổng quan, trao đổi các vấn đề cơ bản, nền tảng.
+- Thực hiện trao đổi các chủ đề chi tiết theo một flow, course về data science theo tuần.
+	- Chủ đề
+	- Case study
+	- Code
+	- Viết tài liệu
+	
+**Nguyên tắc**
+- Những gì quá khó thì bỏ.
+- Tiếp cận theo hướng ứng dụng.
+- Xác định mục đích, mục tiêu rõ ràng. Đánh giá, đo đếm, định lượng được kết quả thực hiện.
+- Chọn những thứ trực quan, thuận tiện, dễ sử dụng. Hiệu năng có thể không cao bằng nhưng tính thuận tiện thì hơn. Ví dụ: lựa chọn python hơn là lựa chọn java.
+
+
+**Trao đổi thành lập nhóm**
+Trả lời các câu hỏi:
+1. Tham gia không?
+2. Sắp xếp thời gian như thế nào? Bao nhiêu giờ/tuần?
+3. Cách thức hoạt động, trao đổi như thế nào?
+
+Câu 2: Bao nhiêu giờ/tuần?
+cường trần: 4h chủ nhật + trung bình 1h/ngày không tính chủ nhật = 4 + 6 = 10h
+cường vũ: 4h chủ nhật + trung bình 0.5h/ngày = 4 + 0.5*6 = 7h
+đức chu: 4h chủ nhật + 7h = 11h
+
+
+Câu 3: Cách thức hoạt động, trao đổi như thế nào?
+- Thực hiện online và offline. Vì vấn đề thời gian của từng người, địa điểm sinh hoạt nên ưu tiên việc thực hiện online.
+	- Online: buổi tối, thống nhất cách thức trao đổi, có 2 lựa chọn:
+		- chat group facebook.
+		- chat group skype.		<= lựa chọn.
+	- Offline: chiều chủ nhật hàng tuần.
+- Phương pháp:
+	1. Đề xuất, thống nhất chủ đề.
+	2. Tự tìm hiểu.
+	3. Trao đổi, thảo luận.
+
+
+
+**Lịch sinh hoạt offline hàng tuần**
+28/09/2014: buổi đầu tiên.
+
+
+
+**Lựa chọn công cụ**
+Công cụ trao đổi, thảo luận:
+- Online, interactive: chat group skype.
+- Online, soạn tài liệu: google docs		<= hạn chế dùng, chỉ khi nào cần thiết mới dùng, tránh phức tạp vấn đề. Dùng google docs có thể cùng soạn tài liệu, nhưng đó là ứng dụng web, có một số bất tiện như cần internet, chậm.
+- Offline: sử dụng zim-wiki để ghi note, viết tài liệu. Thực hiện đồng bộ bằng git.
+
+
+
+
+tài liệu mở
+mở để học hỏi
+
+
+
+
+
+**cài đặt một số thứ**
+1. kịch bản giới thiệu về ipython notebook, markdown đã có. Trình bày với các bạn.
+2. Cài đặt các phần mềm phục vụ việc học tập, ipython notebook, scikit-learn, ...
+3. Phần mềm sublime text để editing file text. Cài extension bogo để có thể gõ tiếng việt trong sublime text.
+- BoGo
+- Markdown Preview
+
+
+
+__giữa hàng đống phương án, chọn phương án nào?__
+
+tối thiểu hoá
+đơn giản hết mức có thể
+
+
+
+
+
+
+
+
+**2014-09-27 11:59:11 Tài liệu về học máy và python**
+Chào mọi người, anh gửi các em tài liệu và kế hoạch sinh hoạt nhóm Data Science.
+
+@Hiếu, Minh, Công: hiện tại các em chưa có kiến thức về lĩnh vực này, các em có thể tự tìm hiểu và trao đổi với bạn bè, ví dụ như với Đức. Khi nào các em cảm phù hợp và yêu thích chủ đề này thì có thể trao đổi với anh để tham gia nhóm.
+
+@Cường Vũ, Đức: tài liệu anh gửi ở đây là dành cho 3 bạn Hiếu, Minh, Công. Tài liệu chính thức của nhóm thì anh đang tổng hợp. Anh sẽ trao đổi cụ thể vào buổi sinh hoạt chiều mai, 14h ngày 28/09/2014, gặp nhau ở cổng B8.
+
+**Tài liệu học máy:**
+1. Machine Learning Overview: https://drive.google.com/open?id=0ByyO0Po-LQ5aZXpzT1F5XzlMcDA&authuser=0
+
+2. Bài giảng học máy của thầy Nguyễn Nhật Quang, đọc L01 để biết các khái niệm cơ bản: https://drive.google.com/open?id=0ByyO0Po-LQ5aMklYSzgwWldpcWc&authuser=0
+
+3. Nhóm thảo luận về học máy do thầy Khoát lập https://www.facebook.com/groups/740288779351180/
+
+4. Harvard's data science course. http://cs109.github.io/2014/
+
+
+**Tài liệu python:**
+1. Python cơ bản do một số thành viên vitcoder tìm hiểu và viết tài liệu.
+https://docs.google.com/document/d/1KvCI_xOQWEmFcRTb-gQTF-0rQKE-TAU_ZudGlwN5_TY/
+
+2. Kế hoạch xây dựng trang tổng hợp blog. Kế hoạch dở dang. Công bố tài liệu để mọi người phát triển tiếp.
+https://drive.google.com/open?id=0ByyO0Po-LQ5aeUNmcFMtNmp4cG8&authuser=0
+
+3. http://scipy-lectures.github.io/
+Tutorial material on the scientific Python ecosystem, a quick introduction to central tools and techniques. The different chapters each correspond to a 1 to 2 hours course with increasing level of expertise, from beginner to expert.
+
+4. http://www.learnpython.org/
+Welcome to the LearnPython.org interactive Python tutorial.
+Whether you are an experienced programmer or not, this website is intended for everyone who wishes to learn the Python programming language.
+
+
+
+
+
+
+===== What are the key skills of a Data Scientist? =====
+Câu hỏi tương tự: http://www.zipfianacademy.com/blog/post/46864003608/a-practical-intro-to-data-science
+
+vấn đề, điểm nhìn, cách nhìn
+
+
+
+
+nguồn software, giải pháp hệ thống xử lí dữ liệu
+http://sequenceiq.com/ TRANSFORM YOUR DATA INTO KNOWLEDGE WITH MACHINE LEARNING
+
+
+
+
+http://www.datasciencecentral.com/profiles/blogs/first-steps-on-the-pathway-to-becoming-a-data-scientist-the-data
+Thank you Hadley Wickham! The 3 main competencies of a Data Scientist is TRANSFORM, MODEL, and VISUALIZE.
+
+**TRANSFORM**
+Python: Pandas data.frames
+R: plyr and dplyr
+
+**MODEL**
+Statistical programming becomes straightforward when you know what stats are needed for your data.
+Take a look at your data, learn some stats, and then go shopping for modules.
+Python: numpy & scipy modules
+R:http://www.r-bloggers.com/the-50-most-used-r-packages/
+
+**VISUALIZE**
+Python: matplotlib
+R: ggplot2
+HTML5: d3.js
+
+Wait! That's not it. We still don't have any data! We need to get some and make it machine readable.
+
+**GET DATA**
+Scrapy web scraper (python libxml2 and libxslt)
+PLY: Python Lex and Yacc
+
+
+
+
+There's a few tools missing that we need to set up an environment
+Vagrant
+Docker
+Git
+
+
+
+===== Kho dữ liệu =====
+
+https://www.kaggle.com/competitions
+
+
+Dữ liệu về thời tiết   ~3TB    ftp://ftp.ncdc.noaa.gov/pub/data/noaa/  Dữ liệu thời tiết khoảng 100 năm 
+
+Dữ liệu best buy mobie  7GB http://www.kaggle.com/c/acm-sf-chapter-hackathon-big    Two years of mobile behavior, 67 million clicks, 27 million searches, 8 million users, 1 million products
+
+Dataset của tweeter 4GB http://an.kaist.ac.kr/traces/WWW2010.html   Crawl the entire Twitter site and obtained 41.7 million user profiles, 1.47 billion social relations, 4,262 trending topics, and 106 million tweets
+
+Web data: Amazon reviews        http://snap.stanford.edu/data/web-Amazon-links.html 
+
+
+
+
+===== đào tạo data scientist =====
+
+
+tự thiết kế
+
+
+**Data Science: How do I begin analyzing data using Python?**
+Check out Harvard's free data science course.
+https://github.com/cs109/
+
+The homeworks (with solutions) walk you through a number of data analysis, mining, scraping, manipulation problems with Python and iPython notebook!
+
+1. Intro to Python, iPython Notebook, Numpy, Matplotlib (Homework 0 http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW0.ipynb) (solutions http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW0_solutions.ipynb)
+2. Poll aggregation, web scraping, plotting, model evaluation, and forecasting (Homework 1 http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW1.ipynb) (solutions http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW1_solutions.ipynb)
+3. Data prediction, manipulation, and evaluation (Homework 2 http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW2.ipynb) (solutions http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW2_solutions.ipynb)
+4. Predictive modeling, model calibration, sentiment analysis (Homework 3 http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW3.ipynb) (solutions http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW3_solutions.ipynb)
+5. Recommendation engines, Using mapreduce (Homework 4 http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW4.ipynb) (solutions http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW4_solutions.ipynb)
+6. Network visualization and analysis (Homework 5 http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW5.ipynb) (solutions http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW5_solutions.ipynb)
+
+Check out Coursera's free data science course
+Lab 2: Web Scraping, ipython.orgLab 3: EDA, Pandas, Matplotlib
+Lab 4: Scikit-Learn, Regression, PCA
+Lab 5: Bias, Variance, Cross-Validation
+Lab 6: Bayes, Linear Regression, and Metropolis Sampling
+Lab 7: Gibbs Sampling
+Lab 8: MapReduce
+Lab 9: Networks
+Lab 10: Support Vector Machines
+
+
+
+__vừa học vừa viết tài liệu__
+
+viết tài liệu học máy
+
+
+
+=> download source code hoc may
+
+
