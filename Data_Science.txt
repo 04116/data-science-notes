@@ -173,7 +173,6 @@ vấn đề, điểm nhìn, cách nhìn
 
 
 
-
 nguồn software, giải pháp hệ thống xử lí dữ liệu
 http://sequenceiq.com/ TRANSFORM YOUR DATA INTO KNOWLEDGE WITH MACHINE LEARNING
 
@@ -250,7 +249,8 @@ The homeworks (with solutions) walk you through a number of data analysis, minin
 6. Network visualization and analysis (Homework 5 http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW5.ipynb) (solutions http://nbviewer.ipython.org/urls/raw.github.com/cs109/content/master/HW5_solutions.ipynb)
 
 Check out Coursera's free data science course
-Lab 2: Web Scraping, ipython.orgLab 3: EDA, Pandas, Matplotlib
+Lab 2: Web Scraping, ipython.org
+Lab 3: EDA, Pandas, Matplotlib
 Lab 4: Scikit-Learn, Regression, PCA
 Lab 5: Bias, Variance, Cross-Validation
 Lab 6: Bayes, Linear Regression, and Metropolis Sampling

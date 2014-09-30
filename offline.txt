@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-09-28T16:23:21+07:00
+
+====== offline ======
+Created Sunday 28 September 2014
+
+09/28/2014
+
+1. Trình bày tổng quan về học máy. Machine learning overview.
+2. Giới thiệu về Khoa học dữ liệu - Data Science.
+3. Giới thiệu qua về khoá học của Harvard, gửi tài liệu.
+4. Trả lời câu hỏi, có câu hỏi của Đức hôm trước.
+

@@ -48,3 +48,34 @@ git push origin "ten branch"
 
 git pull --rebase origin "ten branch"
 
+
+
+
+
+
+===== Nhật kí theo ngày =====
+
+==== 2014-09-29 00:31:56 ====
+dĩ bất biến, ứng vạn biến
+lấy tĩnh chế động
+
+**mô hình toán học**
+
+__TODO: vẽ mô hình ánh xạ từ thế giới thực vào bài toán, hình trong bài giảng của thầy Khang.__
+
+
+Làm nhiều, code từ đầu:
+- Ưu điểm: hiểu rõ vấn đề, làm chủ vấn đề, dễ tuỳ chỉnh, customize.
+- Nhược điểm: tốn rất nhiều thời gian. Sản phẩm tạo ra không tốt vì do khả năng kém, kiến trúc chương trình không tốt, xấu xí, khó mở rộng chương trình.
+
+Sử dụng nguồn mở:
+- Ưu điểm: học hỏi kĩ năng thiết kế, phát triển kiến trúc chương trình. Code có hiệu năng cao, tiết kiệm thời gian.
+- Nhược điểm: nếu chỉ nắm hời hợt thì khó tuỳ chỉnh, customize. Tìm hiểu sâu không phải là việc dễ dàng.
+
+**có hàng đống cặp đối lập, cần cân bằng, dùng thích hợp.**
+
+
+
+
+
+
