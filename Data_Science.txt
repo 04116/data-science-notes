@@ -70,9 +70,9 @@ Trả lời các câu hỏi:
 3. Cách thức hoạt động, trao đổi như thế nào?
 
 Câu 2: Bao nhiêu giờ/tuần?
-cường trần: 4h chủ nhật + trung bình 1h/ngày không tính chủ nhật = 4 + 6 = 10h
-cường vũ: 4h chủ nhật + trung bình 0.5h/ngày = 4 + 0.5*6 = 7h
-đức chu: 4h chủ nhật + 7h = 11h
+**cường trần**: 4h chủ nhật + trung bình 1h/ngày không tính chủ nhật = 4 + 6 = 10h
+**cường vũ**: 4h chủ nhật + trung bình 0.5h/ngày = 4 + 0.5*6 = 7h
+**đức chu**: 4h chủ nhật + 7h = 11h
 
 
 Câu 3: Cách thức hoạt động, trao đổi như thế nào?
