@@ -11,3 +11,18 @@ Created Sunday 28 September 2014
 - Clone repo trên github sử dụng git thông qua ssh, sử dụng một số lệnh như git status, git pull, git push.
 - Hiểu khái quát về Học máy. Hiểu thế nào là học có giám sát và học không có giám sát.
 - Ở nhà: đọc các slide bài giảng, bao gồm cây quyết định. Tìm hiểu thêm về Data Science, Pattern recognition,...
+
+
+
+**2014-10-05 15:16:02**
+ 1. Giải thích công thức MAP và MLE từ công thức Bayes.
+- P(D) = P(D,h1) + P(D,h2) nên bỏ qua P(D) => MAP tìm giá trị cực đại P(D|h).P(h).
+- Từ MAP, nếu giá trị các xác suất trước như nhau P(hi) = P(hj) => MLE chỉ phải tìm giả thuyết cực đại hóa giá trị P(D|h).
+- MLE là trường hợp đặc biệt của MAP. Do trong các tập D cần các giả thiết có P(hi) = P(hj) để có thể học máy một cách khách quan (Ví dụ: tránh trường hợp có 10 ví dụ thì 9 ví dụ là No, chỉ 1 ví dụ là Yes).
+
+2. Tại sao với NB, "Các thuộc tính độc lập có điều kiện đối với các phân lớp"?
+- Quy tắc chuỗi 3 trang 14: P(A,B|C) = P(A , B , C)/P(C) = P(A|B , C).P(B , C)/P(C) = P(A|B , C).P(B|C).
+- Độc lập có điều kiện trang 13: A, B độc lập có điều kiện với C => P(A|B,C) = P(A|C).
+- Suy ra P(A,B|C) = P(A|C).P(B|C).
+
+3. Cực đại hóa kỳ vọng - EM: Bài toán và giải thuật.
