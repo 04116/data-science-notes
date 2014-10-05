@@ -78,7 +78,13 @@ Sử dụng nguồn mở:
 ===== 2014-10-06 01:47:39 =====
 __TODO: làm rõ vấn đề xác suất độc lập có điều kiện__
 - đọc kĩ hơn ví dụ của thầy Quang
-- tạo ví 
+- tạo ví dụ thích hợp. Ví dụ càng dễ hiểu càng tốt. Lấy ví dụ thực tế.
+
+Làm rõ giả sử được sử dụng trong **Naive Bayes**: **Các thuộc tính là độc lập có điều kiện đối với các phân lớp.**
+
+
+
+
 
 
 
