@@ -1,0 +1,364 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-07-14T17:13:05+07:00
+
+====== ipython notebook ======
+Created Monday 14 July 2014
+
+**IPython's Rich Display System**
+HTML
+JSON
+PNG
+JPEG
+SVG
+LaTeX (Mathematical expressions typeset in LaTeX, which is rendered in the browser thanks to the MathJax library.)
+
+
+===== plugin ipython, hacking ipython =====
+http://www.damian.oquanta.info/		<= hacking ipython
+
+http://jakevdp.github.io/blog/2013/12/05/static-interactive-widgets/	<= static widgets ipython
+
+
+
+- graph
+- latex, mathjax, mathematics
+- section numbering
+- reference
+
+
+- extractor
+
+
+- widget, interactive
+
+
+
+**graph from text**
+http://www.graphviz.org/
+	graph
+http://blockdiag.com/en/
+	block diagram (w/ blockdiag)
+	sequence diagram (w/ seqdiag)
+	activity diagram (w/ actdiag)
+	logical network diagram (w/ nwdiag)
+
+
+**ipython extensions**
+
+__Graphviz Extensions		<= vẽ đồ thị (draw graph)__
+To install:
+%install_ext https://raw.github.com/cjdrake/ipython-magic/master/gvmagic.py
+
+To load:
+%load_ext gvmagic
+
+example:
+%%dot
+digraph G {
+	a -> b;
+	b -> c;
+	c -> a;
+}
+
+
+__Magics for activity, block, network and sequence diagrams__
+- activity
+- block
+- network
+- sequence
+
+To install:
+# step 1
+sudo pip install actdiag blockdiag nwdiag seqdiag
+
+# step 2
+%install_ext https://bitbucket.org/vladf/ipython-diags/raw/default/diagmagic.py
+
+=> update file:
+https://bitbucket.org/badi/ipython-diags/raw/3bc2b116cdb38d8c2d86559166f961b9ed5db5f9/diagmagic.py
+
+To load:
+%load_ext diagmagic
+
+
+To use:
+%%actdiag 
+{
+  write -> convert -> image
+
+  lane user {
+     label = "User"
+     write [label = "Writing reST"];
+     image [label = "Get diagram IMAGE"];
+  }
+  lane actdiag {
+     convert [label = "Convert reST to Image"];
+  }
+}
+
+%%blockdiag 
+{
+  // branching edges to multiple children
+  A -> B, C;
+
+  // branching edges from multiple parents
+  D, E -> F;
+}
+
+%%nwdiag
+{
+  network dmz {
+      address = "210.x.x.x/24"
+
+      web01 [address = "210.x.x.1"];
+      web02 [address = "210.x.x.2"];
+  }
+  network internal {
+      address = "172.x.x.x/24";
+
+      web01 [address = "172.x.x.1"];
+      web02 [address = "172.x.x.2"];
+      db01;
+      db02;
+  }
+}
+
+%%seqdiag
+{
+    browser -> webserver [label = "POST /blog/comment"];
+               webserver -> database [label = "INSERT comment"];
+               webserver <-- database;
+    browser <-- webserver;
+}
+
+
+__ipy_table__: Create richly formatted data tables in IPython Notebooks.
+http://epmoyer.github.io/ipy_table/
+Reference Guide
+http://nbviewer.ipython.org/github/epmoyer/ipy_table/blob/master/ipy_table-Reference.ipynb
+
+To install:
+sudo pip install ipy_table 
+
+To use:
+	from ipy_table import *
+	planets = [
+	    ['Planet', 'Mass (kg)', 'Diameter (km)'],
+	    ['Mercury', 3.3022E23, 4879], 
+	    ['Venus', 4.896E24, 12104],
+	    ['Earth', 5.972E24, 12735],
+	    ['Mars', 6.4191E23, 6772]];
+	make_table(planets)
+	set_row_style(0, bold=True)
+
+
+__Section numbering: %secnum__
+ipython hỗ trợ heading 1-6
+
+To install:
+%install_ext https://raw.github.com/dpsanders/ipython_extensions/master/section_numbering/secnum.py
+
+To load:
+%load_ext secnum
+
+To use:
+%secnum
+
+
+__sql__
+Passes SQL statements to any database reachable by SQLAlchemy, and renders results as tabular HTML or pretty text tables, where possible.
+http://nbviewer.ipython.org/gist/catherinedevlin/5272681
+
+To install:
+sudo pip install ipython-sql
+
+To load:
+%load_ext sql
+
+To use:
+%sql sqlite://
+
+%%sql
+CREATE TABLE writer (first_name, last_name, year_of_death);
+INSERT INTO writer VALUES ('William', 'Shakespeare', 1616);
+INSERT INTO writer VALUES ('Bertold', 'Brecht', 1956);
+
+%sql select * from writer
+
+
+
+
+__IPython-BeautifulSoup		<= extract entity from html__
+Pretty HTML rendering and html display of BeautifulSoup queries in the notebook and the qtconsole.
+https://github.com/Psycojoker/ipython-beautifulsoup
+
+To install:
+sudo pip install "ipython-beautifulsoup[bs4,notebook]"
+
+To load:
+%load_ext soup
+
+To use:
+configure_ipython_beautifulsoup(show_html=True, show_css=True, show_js=False)
+
+soup = p('http://vietnamnet.vn/vn/tuanvietnam/186943/hie-p-di-nh-geneva--nhu-ng-gi--de--la-i-cho-hom-nay-.html')
+
+
+
+__%version_information__
+The %version_information magic extension displays a table with version information for selected Python modules. Use it in a notebook keep a record of exactly which versions of dependency modules were used to run the notebook.
+
+To install:
+%install_ext http://raw.github.com/jrjohansson/version_information/master/version_information.py
+
+To load:
+%load_ext version_information
+
+To use:
+%version_information
+%version_information ipython, sklearn, nltk, pandas
+
+
+
+
+
+
+
+
+
+===== Ứng dụng sử dụng ipython =====
+1. Tập hợp tài liệu về việc sử dụng IPython Notebook để giảng dạy, đào tạo.
+    How IPython Notebook and Github have changed the way I teach Python
+    http://peak5390.wordpress.com/2013/09/22/how-ipython-notebook-and-github-have-changed-the-way-i-teach-python/
+
+
+2. Xây dựng mô hình giáo dục mới
+    Lightning Talk: Abolishing the traditional high school structure
+    http://peak5390.wordpress.com/2013/03/17/lightning-talk-abolishing-the-traditional-high-school-structure/
+
+
+Cần quản lí phiên bản, sử dụng git:
+http://nbviewer.ipython.org/github/fperez/reprosw/blob/master/Version%20Control.ipynb
+
+Tham khảo tài liệu training backend. Sẽ đọc lại tài liệu và ghi tiếp.
+
+
+
+
+https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks		<= __tập hợp nhiều ipython notebook hay. Phần lớn là các khóa về computer science.__
+
+
+
+==== learn python ====
+http://www.markus-gattol.name/ws/python.html		<= Tài liệu giới thiệu về lịch sử, ngôn ngữ python. Bài viết sử dụng nhiều trích dẫn. Bài viết có tính triết lí cao. Đề cập đến hầu hết các vấn đề của python, in dưới dạng pdf dài hơn 200 trang.
+
+
+
+**blog viết về python**
+http://jakevdp.github.io/			Blog cá nhân. Các bài viết thú vị, sâu về các vấn đề tổ chức bộ nhớ của python. Các bài viết hacking python, các trick thú vị. Đang có loạt bài về 2 trường phái thống kê Frequentism and Bayesianism.
+
+
+**python tip, trick, fun**
+http://www.vithon.org/2010/01/22/python-one-liner			Python One-Liner
+
+
+==== Giáo dục sử dụng ipython ====
+
+
+http://opentechschool.github.io/python-data-intro/core/notebook.html
+
+http://opentechschool.github.io/		<= có vẻ hay, **Introduction to Data Processing with Python**
+
+
+
+**STATS191: Introduction to Applied Statistics**
+http://web.stanford.edu/class/stats191/
+
+
+**Harvard CS 109: Data Science**
+https://github.com/cs109
+
+
+**Statistical Data Analysis in Python**
+https://github.com/fonnesbeck/statistical-analysis-python-tutorial
+
+Examples from the IPython mini-book
+https://github.com/rossant/ipython-minibook
+
+Python Scientific Lecture Notes
+http://scipy-lectures.github.io/
+
+
+
+Tutorials & Examples: Topics
+1. Intro to Numpy
+2. Intro to Scipy
+3. Intro to Pandas
+4. Map-Reduce Examples
+5. Bitly Log Files
+6. Wiki Log Files
+7. Time Series (Glucose)
+8. Image Processing
+9. Text Analysis
+10. Scikit-learn (Ipython Notebook)
+https://github.com/ContinuumIO/tutorials
+
+
+
+aka "Bayesian Methods for Hackers": An introduction to Bayesian methods + probabilistic programming with a computation/understanding-first, mathematics-second point of view. All in pure Python ;)
+http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/
+
+
+
+http://nborwankar.github.io/LearnDataScience/
+Learn Data Science: Open content for self-directed learning in data science
+
+
+http://annstock.herokuapp.com/
+A Neural Network Application: Predicting the Stock Market
+
+
+**thư viện python**
+
+Statsmodels
+http://statsmodels.sourceforge.net/
+
+
+
+**mining web**
+http://nbviewer.ipython.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
+
+
+
+**machine learning for hacker**
+http://slendermeans.org/pages/blogroll.html		<= danh sách blog cá nhân viết về statistics, data mining, python
+
+http://slendermeans.org/index.html		<= blog cá nhân của tác giả
+http://nbviewer.ipython.org/github/carljv/Will_it_Python/blob/master/MLFH/CH1/chapter1.ipynb
+
+http://slendermeans.org/pages/will-it-python.html
+__Will it Python?__ posts are my attempts to port data analyses originally done in R into Python.
+The objective isn’t to just make a key that translates functions and methods in R into Python equivalents. Instead, the goal is to reproduce the results and insights of the analysis in idiomatic Python (to the extent I’m qualified to judge such a thing). Sometimes there will be a direct translation from a line of R to a line of Python; other times Python will suggest an altogether different approach to the problem.
+
+
+http://ipython-books.github.io/		<= sách ipython cookbook, machine learning, scikit-learn, networkx, tính toán hiệu năng cao. The definitive guide to __high-performance scientific computing__ and __data science__ in Python.
+
+===== my ipython notebook config =====
+
+
+
+===== ipython notebook command =====
+ipython console --existing /home/coc/.ipython/profile_default/security/kernel-38cbe1ac-6eef-4c42-80a1-c956f00922de.json
+
+
+ipython profile create tmp
+
+ipython notebook --profile=tmp
+
+ipython notebook --profile=tmp --debug
+
+
+ipython nbconvert --to slides notebook.ipynb
+
+ipython nbconvert talk.ipynb --to slides --post serve 

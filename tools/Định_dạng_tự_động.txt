@@ -1,0 +1,245 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-07-14T16:04:07+07:00
+
+====== Định dạng tự động ======
+Created Monday 14 July 2014
+
+===== Ngôn ngữ đánh dấu cho việc ghi chú =====
+
+==== Khảo sát ====
+**xây dựng ngôn ngữ đánh dấu để ghi chú**
+**yêu cầu:**
+- đơn giản, tiết kiệm kí tự cần gõ
+- đầy đủ các chức năng, đáp ứng đủ khả năng định dạng văn bản
+- phổ biến, kế thừa từ những ngôn ngữ đã có
+- có thể ghi được công thức toán học: điểm cộng quan trọng
+- hiện thị được cấu trúc của văn bản: struct, mục lục
+
+**tiến hành:**
+- khảo sát các "ngôn ngữ" sau:
+        wiki
+        pmwiki  -> không phổ biến lắm
+        markdown  -> nên được sử dụng vì viết đâu có thể thấy đấy, phải tìm hiểu sớm. Cái này rất tuyệt!
+        zim-wiki -> có chương trình hiện thị luôn, khuyến nghị
+        sphinx: like atx
+
+- lựa chọn: cần 1 ngôn ngữ đầy đủ hơn, các ngôn ngữ hiện có chưa đáp ứng được những yêu cầu trên.
+    Sự xuất hiện của nhiều ngôn ngữ không tương thích nhau là 1 vấn đề! Xây dựng 1 ngôn ngữ thoả mãn các yêu cầu trên quả là khó. Hơn nữa, cần chương trình để đọc hiểu được ngôn ngữ trên, để quá trình tương tác tốt hơn.
+    Dựa trên tiêu chí tương đối dễ đọc và có chương trình hiểu ngôn ngữ, quyết định chọn zim-wiki. Dù vậy, cần tìm cách chỉnh style cho zim vì style hiện tại xấu. <= ok, đã chỉnh sửa
+
+
+==== Ước mơ ====
+- **tương tác:** bằng cảm ứng, đồ hoạ, text
+- **lưu trữ bằng text:** plaintext
+- đủ hiệu quả để trở nên phổ biến
+    -- đơn giản, có thể thấy cấu trúc bằng cách đọc plaintext
+    -- đầy đủ các yêu cầu định dạng văn bản cơ bản
+    -- quá trình dịch (render) từ mã sang hình ảnh hiện thị nhanh
+
+
+==== Sổ ý tưởng ====
+1. Trang web tổng hợp tri thức
+
+2. Tìm cách convert một cách tự động note từ zim-wiki sang ipython notebook.
+- Muốn sử dụng ipython notebook vì tính mono, tự động định dạng.
+- Muốn dùng zim-wiki vì giao diện cho phép soạn thảo thuận tiện.
+
+3. Tôi muốn một sổ ghi lại quá trình tìm tài liệu, tóm tắt và tổng hợp.
+- Sổ này nên có thiết kế bảng, chia thành từng cột để dễ so sánh các tài liệu.
+- Nhưng cũng muốn sự đơn giản, phẳng, hiện tất cả nội dung lên.
+
+Như vậy muốn:
+- khi làm từng cái 1 thì muốn hiện tất cả nội dung lên.
+- có thể zoom out, có một cái nhìn toàn cảnh, hiện  dữ liệu dạng bảng, có cấu trúc để tiện so sánh.
+
+
+4. ý tưởng:
+tạo quy trình, sử dụng ipython notebook để viết tài liệu dạng vừa viết code, vừa hiện thị kết quả. Sau đó, export kết quả thành file định dạng markdown thích hợp, publish lên web.
+
+Hỗ trợ việc quản lí phiên bản, sử dụng git.
+
+5. Xây dựng
+thuật ngữ, bộ từ vựng, khái niệm
+ánh xạ, mapping vấn đề giữa các lĩnh vực
+xây dựng thư viện từ điển thuật ngữ
+thuật ngữ, từ khoá để hiểu khái quá một ngành, lĩnh vực
+
+
+==== Chi tiết ý tưởng ====
+tôi muốn tổng hợp các bài viết từ các blog tin học, tạo một môi trường cho phép sửa chữa, hoàn thiện nội dung bài viết; cho phép người dùng đánh giá bài viết.
+
+**Giai đoạn 1**
+- đóng gói bài viết để lưu trữ, từ nội dung text đến các file ảnh -> thực hiện tách nội dung, file ảnh chuyển thành base64
+- chuẩn hóa dữ liệu, dạng biểu diễn, chuyển hết về định dạng Markdown hoặc RestructuredText. Có tác dụng là chuẩn hóa + đơn giản + định dạng tự động (style).
+
+=> như vậy về việc lấy nội dung gồm một số ý:
+- lấy tự động
+- chuyển về định dạng đơn giản, dễ lưu trữ
+- lấy hết dữ liệu và lưu trữ tất cả trong một (tất cả nội dung trong 1 file .ipynb)
+- thực hiện chuẩn hóa và định dạng tự động bằng style
+
+auto crawler + simple data + monolithic + standardize + style
+(lấy tự động + dữ liệu đơn giản + lưu trữ nguyên khối + chuẩn hóa + style)
+
+**Giai đoạn 2**
+Sau khi đã có dữ liệu, tạo môi trường để người dùng có thể đóng góp sửa đổi (giống như wiki), cho ý kiến đánh giá về bài viết. Mô hình hỏi đáp, thảo luận, có chỉ số đánh giá độ uy tín của người dùng (giống stackoverflow).
+
+
+__tôi muốn__
+- tự động tổng hợp
+- viết văn bản như viết code: viết code và tự động sinh mã thích hợp. Việc định dạng nội dung nên là automatic.
+- lưu trữ dưới dạng text thì tốt, vì như thế có thể sử dụng git để theo dõi thay đổi một cách hiệu quả.
+- ưu thích sự nguyên khối, tất cả trong một. Chia sẻ thuận tiện.
+
+Có một số cặp đối lập, cặp các phương án. Mỗi cách làm có ưu, nhược điểm riêng. Tôi muốn kết hợp ưu điểm của nhiều phương pháp nhưng vẫn giữ được tính đơn giản, hiệu quả.
+
+
+auto detect công nghệ xây dựng website -> sử dụng cách duyệt trang thích hợp để lấy hết nội dung
+khi người dùng nhập URL trang web và muốn crawler nội dung, hiện tùy chọn tự động detect hoặc chỉ định rõ trang này sử dụng nền tảng nào.
+
+
+===== Định dạng tự động =====
+IPython Notebook. Ngôn ngữ markdown.
+Ý tưởng về việc sử dụng ngôn ngữ markup để soạn thảo + style => sinh ra tài liệu được định dạng tự động, dễ tùy chỉnh.
+
+Vấn đề chuyển đổi:
+- Chuyển đổi tài liệu cũ.
+- Quy trình xây dựng tài liệu mới.
+
+Vấn đề xây dựng chuẩn:
+- Xây dựng chuẩn tài liệu, style.
+- Xây dựng công cụ hỗ trợ việc soạn thảo, chỉnh sửa tài liệu.
+
+Tài liệu tham khảo
+1. https://en.wikipedia.org/wiki/Markdown
+2. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+
+Ví dụ về markdown:
+- Python Language
+
+```python
+for i in range(10):
+    print('hello')
+```
+
+- C Language
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello world!\n");
+    return 0;
+}
+```
+
+các công cụ để từ text-based sinh ra các thứ khác
+
+
+
+**công cụ chuyển đổi**
+
+convert document to markup syntax
+
+https://github.com/mangini/gdocs2md
+Convert a Google Drive Document to the Markdown format, suitable for publishing.
+
+pandoc - general markup converter
+
+pandoc file_input.html -f html -t markdown -o file_output.md
+
+
+
+convert markdown to an IPython notebook
+https://github.com/aaren/notedown
+
+
+
+**chỉnh sửa và hiện thị markdown**
+https://github.com/ncornette/Python-Markdown-Editor
+
+Launch editor for testing :
+
+$ markdown_edit.py 
+Edit existing markdown file for preview :
+
+$ markdown_edit.py readme.md
+
+Edit existing markdown file and save html output file :
+$ markdown_edit.py -f readme.html readme.md
+
+
+
+
+===== Tổng hợp các tài liệu về markdown =====
+
+- markdown
+
+- GitHub Flavored Markdown
+hỗ trợ markdown
+hỗ trợ thêm các tag của github, link đến người dùng github bằng @username
+dóng hàng tự động bằng dấu :
+
+
+- ipython notebook
+hỗ trợ cả markdown
+hỗ trợ việc hiện thị công thức toán học, viết công thức bằng latex
+
+hỗ trợ việc chạy code python
+hỗ trợ việc vẽ hình bằng matplotlib. Kết quả được lưu dưới dạng base64.
+
+
+
+
+**hiện thị markdown**
+
+Live (Github-flavored) Markdown Editor
+https://github.com/jbt/markdown-editor
+
+
+
+
+**cú pháp markdown**
+Markdown
+--------
+http://support.iawriter.com/help/kb/general-questions/markdown-syntax-reference-guide
+
+
+Highlighting text in color using HTML and CSS
+http://www.computerhope.com/issues/ch001391.htm
+
+Ví dụ:
+<span style="color: #ff0000">Red text.</span>
+<span style="background-color: #FFFF00">Yellow text.</span>
+
+
+highlight css class. Chưa dùng với ipython notebook được, sẽ tìm cách xử lí sau.
+
+<style>
+.highlight
+{
+   background-color: yellow;
+}
+</style>
+
+<span class="highlight">only the text will be highlighted</span>
+
+
+
+__việc cần tìm hiểu__
+công cụ hỗ trợ soạn thảo markdown
+chuẩn soạn thảo
+
+
+**hỗ trợ nhập bảng**
+http://www.tablesgenerator.com/markdown_tables
+http://truben.no/latex/table/
+
+
+
+
+
+
