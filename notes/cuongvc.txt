@@ -7,4 +7,10 @@ Created Chủ nhật 28 Tháng chín 2014
 
 Hello World
 
-I',=
+**Yêu cầu trước buổi  2014-10-12**
+	+ Push Git
+	+ Cài đặt iPython
+	+ Làm hw0
+	+ Chuẩn bị hw1
+	
+	

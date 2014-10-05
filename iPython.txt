@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-10-05T13:19:24+07:00
+
+====== iPython ======
+Created Chủ nhật 05 Tháng mười 2014
+
+**2014-10-05 16:08:00**
+
+**1. Làm thế nào để run server ipython**
+**Giải pháp**
+
+	ipython notebook --profile=nbserver.
+	
+	run in : http://127.0.0.1:8888/#notebooks
+	
+**2. Make a file**
+**Giải pháp**
+
+
+**3. Open folder**
+
+
+
