@@ -75,7 +75,10 @@ Sử dụng nguồn mở:
 **có hàng đống cặp đối lập, cần cân bằng, dùng thích hợp.**
 
 
-
+===== 2014-10-06 01:47:39 =====
+__TODO: làm rõ vấn đề xác suất độc lập có điều kiện__
+- đọc kĩ hơn ví dụ của thầy Quang
+- tạo ví 
 
 
 
