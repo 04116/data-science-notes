@@ -5,6 +5,24 @@ Creation-Date: 2014-10-05T13:19:24+07:00
 ====== ipython ======
 Created Chủ nhật 05 Tháng mười 2014
 
+
+**Cài đặt thư viện python**
+Có 2 cách để cài:
+1. Cài từ kho của ubuntu, sử dụng Synaptic để tìm kiếm và cài đặt.
+- Ưu điểm: Cài đặt đơn giản. Tự động cài đặt các gói phụ thuộc (dependence).
+- Nhược điểm: Các gói thường có phiên bản không phải là mới nhất.
+
+2. Cài đặt từ mã nguồn, sử dụng pip.
+Cài đặt: pip install tên_gói
+Gỡ cài đặt: pip uninstall tên_gói
+
+- Ưu điểm: Gói cài đặt có phiên bản mới nhất.
+- Nhược điểm: Phải biên dịch gói từ mã nguồn. pip tự động tải các gói phụ thuộc và tiến hành biên dịch.
+
+
+
+
+
 **2014-10-05 16:08:00**
 
 **1. Làm thế nào để run server ipython**
