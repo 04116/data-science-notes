@@ -20,3 +20,5 @@ Wiki-Format: zim 0.4
 - Quy tắc chuỗi 3 trang 14: P(A,B|C) = P(A , B , C)/P(C) = P(A|B , C).P(B , C)/P(C) = P(A|B , C).P(B|C).
 - Độc lập có điều kiện trang 13: A, B độc lập có điều kiện với C => P(A|B,C) = P(A|C).
 - Suy ra P(A,B|C) = P(A|C).P(B|C).
+
+3. Cực đại hóa kỳ vọng - EM: Bài toán và giải thuật.
