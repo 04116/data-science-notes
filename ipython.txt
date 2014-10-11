@@ -20,6 +20,12 @@ Gỡ cài đặt: pip uninstall tên_gói
 - Nhược điểm: Phải biên dịch gói từ mã nguồn. pip tự động tải các gói phụ thuộc và tiến hành biên dịch.
 
 
+sudo apt-get install python-pip
+sử dụng pip hay hơn easy_install. pip là đời sau, hỗ trợ câu lệnh install, uninstall
+
+
+
+
 
 
 
