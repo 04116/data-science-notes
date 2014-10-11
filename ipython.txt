@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2014-10-05T13:19:24+07:00
 
-====== iPython ======
+====== ipython ======
 Created Chủ nhật 05 Tháng mười 2014
 
 **2014-10-05 16:08:00**
@@ -30,4 +30,9 @@ Qgrid is an IPython extension which uses a javascript library called SlickGrid t
 
 
 
+**mpld3 - Bringing Matplotlib to the Browser**
+http://mpld3.github.io/notebooks/mpld3_demo.html
+
+# install
+sudo pip install mpld3
 
