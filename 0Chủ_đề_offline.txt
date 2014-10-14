@@ -5,10 +5,41 @@ Creation-Date: 2014-09-28T16:23:21+07:00
 ====== 0Chủ đề offline ======
 Created Sunday 28 September 2014
 
-09/28/2014
-
+==== 2014-09-28 Buổi học đầu tiên, tổng quan ====
 1. Trình bày tổng quan về học máy. Machine learning overview.
 2. Giới thiệu về Khoa học dữ liệu - Data Science.
 3. Giới thiệu qua về khoá học của Harvard, gửi tài liệu.
-4. Trả lời câu hỏi, có câu hỏi của Đức hôm trước.
+4. Trả lời câu hỏi, có câu hỏi của Đức hôm trước chat facebook.
+
+==== 2014-10-05 Giới thiệu về công cụ, cách thức sử dụng ====
+**IN: Trình bày về công cụ sử dụng:**
+- zim-wiki
+- git
+- ipython notebook
+
+**Đọc bài đầu tiên:**
+- [CS109] 01-Introduction
+
+**HW: Bài tập về nhà, yêu cầu trước buổi  2014-10-12**
+- Push Git
+- Cài đặt iPython
+- Làm hw0
+- Chuẩn bị hw1
+
+==== 2014-10-12 Giới thiệu sơ qua về xác xuất thống kê. Đọc process. ====
+**PRE: Chữa bài hôm trước:**
+- Giới thiệu sơ qua về matplotlib, numpy.
+- Giới thiệu sơ qua về xác suất thống kê, hàm mật độ xác suất.
+- Giải bài toán Monty Hall bằng mô phỏng.
+
+Vấn đề:
+- Cần ôn luyện lại kiến thức về xác suất thống kê.
+- Cần sử dụng numpy nhiều hơn, hiểu được các khái niệm và cách thức sử dụng.
+
+
+**IN: Đọc tài liệu và thực hành:**
+- [CS109] 02-Process
+- hw1
+
+HW:
 
