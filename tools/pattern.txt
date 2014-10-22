@@ -15,3 +15,4 @@ The module is free, well-document and bundled with 50+ examples and 350+ unit te
 {{./pasted_image.png}}
 
 
+http://www.clips.ua.ac.be/pages/pattern-web
