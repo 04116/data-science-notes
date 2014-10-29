@@ -26,9 +26,6 @@ sử dụng pip hay hơn easy_install. pip là đời sau, hỗ trợ câu lện
 
 
 
-
-
-
 **2014-10-05 16:08:00**
 
 **1. Làm thế nào để run server ipython**
@@ -54,9 +51,6 @@ Qgrid is an IPython extension which uses a javascript library called SlickGrid t
 
 
 
-**mpld3 - Bringing Matplotlib to the Browser**
-http://mpld3.github.io/notebooks/mpld3_demo.html
 
-# install
-sudo pip install mpld3
+
 
