@@ -28,6 +28,12 @@ sns.set()
 http://jsdatav.is/intro.html
 
 
+có rất nhiều thư viện javascript hỗ trợ Biểu diễn dữ liệu. Hãy thử nghiệm chúng và đưa kết quả của bạn lên web ;)
+http://d3js.org/ http://mbostock.github.io/protovis/
+coding every time
+
+
+javascript, css và web: thật là tuyệt!!!
 
 
 

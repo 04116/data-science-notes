@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-11-02T13:25:58+07:00
+
+====== Statistics ======
+Created Sunday 02 November 2014
+
+===== Statistics Course =====
+**STATS191: Introduction to Applied Statistics**
+http://web.stanford.edu/class/stats191/
+
+
+**Statistical Data Analysis in Python**
+https://github.com/fonnesbeck/statistical-analysis-python-tutorial
+
+
+
+**jakevdp**
+http://nbviewer.ipython.org/github/jakevdp/ESAC-stats-2014/blob/master/notebooks/Index.ipynb
+
+http://www.cosmos.esa.int/web/esac-science-faculty/esac-statistics-workshop-2014
+
+
+sudo pip install emcee
+sudo pip install -U numpy matplotlib scipy scikit-learn
+
+
+**blog viết về python**
+http://jakevdp.github.io/			Blog cá nhân. Các bài viết thú vị, sâu về các vấn đề tổ chức bộ nhớ của python. Các bài viết hacking python, các trick thú vị. Đang có loạt bài về 2 trường phái thống kê Frequentism and Bayesianism.
+http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/
+
