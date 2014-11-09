@@ -91,16 +91,9 @@ __Xác suất là gì?__
 				
 			**Bài 1.4** Một nhóm có 5 người, với 5 tên khác nhau. Mỗi người viết tên của một người khác trong nhóm một cách ngẫu nhiên vào giấy. Tính xác suất để có 2 người trong nhóm viết tên của nhau.
 
-				+ Với mỗi 1 người, có 4 cách để viết vào tờ giấy(4 người còn lại) -> số trường hợp xảy ra là 4 ^ 5.
-				
-				+ **Xét trường hợp chỉ có 2 người viết tên nhau.** Có **4 + 3 + 2 + 1 = 10** cách ghép đôi 2 người với nhau trong nhóm 5 người. Với mỗi cách ghép, trong 3 người còn lại, không được xảy ra trường hợp 1 cặp nào đó viết tên nhau. Số trường hợp thỏa mãn là 
-												__4^3 - 3 * 4.__
-								-> có 10*(4^3 - 3 * 4) trường hợp xảy ra có 2 người viết tên nhau.
-
-				**+ Xét trường hợp chỉ có 2 cặp viết tên nhau.** Số cách ghép đôi là 3 * 5 = 15 cách.(Có 5 cách tìm 4 số chứa 2 cặp. 4 số sẽ tạo ra 3 cặp. -> 15 cách).
-				
-				-> số cách để có 2 người trong nhóm viết tên nhau:
-					10*(4^3 - 3 * 4) + 15 = 535/1024.
+				 Gọi Ω là không gian mẫu, A là biến cố có hai người trong nhóm viết tên của nhau. 
+				Ta có |Ω| = 45 = 1024, |A| = C(2 cua 5) .4^3 − C(4 cua 5) .C(2 cua 4) .4 = 520 . (Đầu tiên chọn ra hai người trong nhóm viết tên của nhau, 3 người còn lại viết tên một người bất kỳ trong nhóm, như vậy những cách viết tên mà có hai cặp trong nhóm viết tên của nhau đã được tính hai lần). Xác suất để có hai người trong nhóm viết tên của nhau là P(A) = |A| / |Ω| = 65/128.
+ 
 			**Bài 1.5**__ Giả sử trong một giải bóng đá đấu loại trực tiếp có 8 đội A,B,C,D,E,F,G,H tham gia: vòng 1 có 4 trận, vòng 2 có 2 trận, vòng 3 (vòng cuối cùng) có 1 trận. Giá sử xác suất để mỗi đội thắng mỗi trận đều là 1/2, và các đội bắt thăm để xem đội nào đấu với đội nào ở vòng đầu, các vòng sau thì được xếp theo kết quả vòng trước. Tính xác suất để đội A có đấu với đội B trong giải.__
 
 				__+ Số trường hợp xảy trong trong giải đấu là:__
