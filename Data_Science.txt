@@ -231,9 +231,7 @@ Web data: Amazon reviews        http://snap.stanford.edu/data/web-Amazon-links.h
 
 ===== đào tạo data scientist =====
 
-
 tự thiết kế
-
 
 **Data Science: How do I begin analyzing data using Python?**
 Check out Harvard's free data science course.
@@ -258,15 +256,4 @@ Lab 7: Gibbs Sampling
 Lab 8: MapReduce
 Lab 9: Networks
 Lab 10: Support Vector Machines
-
-
-
-__vừa học vừa viết tài liệu__
-
-viết tài liệu học máy
-
-
-
-=> download source code hoc may
-
 

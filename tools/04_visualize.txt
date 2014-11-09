@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-10-29T00:32:17+07:00
+
+====== 04 visualize ======
+Created Wednesday 29 October 2014
+
+**mpld3 - Bringing Matplotlib to the Browser**
+http://mpld3.github.io/notebooks/mpld3_demo.html
+
+# install
+sudo pip install mpld3
+
+import mpld3
+mpld3.enable_notebook()
+
+
+**Seaborn: statistical data visualization**
+http://web.stanford.edu/~mwaskom/software/seaborn/
+# use seaborn plotting defaults
+# If this causes an error, you can comment it out.
+import seaborn as sns
+sns.set()
+
+
+
+**Data Visualization with JavaScript**
+http://jsdatav.is/intro.html
+
+
+có rất nhiều thư viện javascript hỗ trợ Biểu diễn dữ liệu. Hãy thử nghiệm chúng và đưa kết quả của bạn lên web ;)
+http://d3js.org/ http://mbostock.github.io/protovis/
+coding every time
+
+
+javascript, css và web: thật là tuyệt!!!
+
+
+

@@ -88,12 +88,12 @@ To use:
   write -> convert -> image
 
   lane user {
-     label = "User"
-     write [label = "Writing reST"];
-     image [label = "Get diagram IMAGE"];
+	 label = "User"
+	 write [label = "Writing reST"];
+	 image [label = "Get diagram IMAGE"];
   }
   lane actdiag {
-     convert [label = "Convert reST to Image"];
+	 convert [label = "Convert reST to Image"];
   }
 }
 
@@ -109,27 +109,27 @@ To use:
 %%nwdiag
 {
   network dmz {
-      address = "210.x.x.x/24"
+	  address = "210.x.x.x/24"
 
-      web01 [address = "210.x.x.1"];
-      web02 [address = "210.x.x.2"];
+	  web01 [address = "210.x.x.1"];
+	  web02 [address = "210.x.x.2"];
   }
   network internal {
-      address = "172.x.x.x/24";
+	  address = "172.x.x.x/24";
 
-      web01 [address = "172.x.x.1"];
-      web02 [address = "172.x.x.2"];
-      db01;
-      db02;
+	  web01 [address = "172.x.x.1"];
+	  web02 [address = "172.x.x.2"];
+	  db01;
+	  db02;
   }
 }
 
 %%seqdiag
 {
-    browser -> webserver [label = "POST /blog/comment"];
-               webserver -> database [label = "INSERT comment"];
-               webserver <-- database;
-    browser <-- webserver;
+	browser -> webserver [label = "POST /blog/comment"];
+			   webserver -> database [label = "INSERT comment"];
+			   webserver <-- database;
+	browser <-- webserver;
 }
 
 
@@ -144,11 +144,11 @@ sudo pip install ipy_table
 To use:
 	from ipy_table import *
 	planets = [
-	    ['Planet', 'Mass (kg)', 'Diameter (km)'],
-	    ['Mercury', 3.3022E23, 4879], 
-	    ['Venus', 4.896E24, 12104],
-	    ['Earth', 5.972E24, 12735],
-	    ['Mars', 6.4191E23, 6772]];
+		['Planet', 'Mass (kg)', 'Diameter (km)'],
+		['Mercury', 3.3022E23, 4879], 
+		['Venus', 4.896E24, 12104],
+		['Earth', 5.972E24, 12735],
+		['Mars', 6.4191E23, 6772]];
 	make_table(planets)
 	set_row_style(0, bold=True)
 
@@ -229,13 +229,13 @@ To use:
 
 ===== Ứng dụng sử dụng ipython =====
 1. Tập hợp tài liệu về việc sử dụng IPython Notebook để giảng dạy, đào tạo.
-    How IPython Notebook and Github have changed the way I teach Python
-    http://peak5390.wordpress.com/2013/09/22/how-ipython-notebook-and-github-have-changed-the-way-i-teach-python/
+	How IPython Notebook and Github have changed the way I teach Python
+	http://peak5390.wordpress.com/2013/09/22/how-ipython-notebook-and-github-have-changed-the-way-i-teach-python/
 
 
 2. Xây dựng mô hình giáo dục mới
-    Lightning Talk: Abolishing the traditional high school structure
-    http://peak5390.wordpress.com/2013/03/17/lightning-talk-abolishing-the-traditional-high-school-structure/
+	Lightning Talk: Abolishing the traditional high school structure
+	http://peak5390.wordpress.com/2013/03/17/lightning-talk-abolishing-the-traditional-high-school-structure/
 
 
 Cần quản lí phiên bản, sử dụng git:
@@ -255,8 +255,6 @@ http://www.markus-gattol.name/ws/python.html		<= Tài liệu giới thiệu về
 
 
 
-**blog viết về python**
-http://jakevdp.github.io/			Blog cá nhân. Các bài viết thú vị, sâu về các vấn đề tổ chức bộ nhớ của python. Các bài viết hacking python, các trick thú vị. Đang có loạt bài về 2 trường phái thống kê Frequentism and Bayesianism.
 
 
 **python tip, trick, fun**
@@ -272,25 +270,16 @@ http://opentechschool.github.io/		<= có vẻ hay, **Introduction to Data Proces
 
 
 
-**STATS191: Introduction to Applied Statistics**
-http://web.stanford.edu/class/stats191/
 
 
-**Harvard CS 109: Data Science**
-https://github.com/cs109
-
-
-**Statistical Data Analysis in Python**
-https://github.com/fonnesbeck/statistical-analysis-python-tutorial
-
-Examples from the IPython mini-book
+**Examples from the IPython mini-book**
 https://github.com/rossant/ipython-minibook
 
-Python Scientific Lecture Notes
+**Python Scientific Lecture Notes**
 http://scipy-lectures.github.io/
 
 
-
+https://github.com/ContinuumIO/tutorials
 Tutorials & Examples: Topics
 1. Intro to Numpy
 2. Intro to Scipy
@@ -302,21 +291,23 @@ Tutorials & Examples: Topics
 8. Image Processing
 9. Text Analysis
 10. Scikit-learn (Ipython Notebook)
-https://github.com/ContinuumIO/tutorials
 
 
 
-aka "Bayesian Methods for Hackers": An introduction to Bayesian methods + probabilistic programming with a computation/understanding-first, mathematics-second point of view. All in pure Python ;)
+**Harvard CS 109: Data Science**
+https://github.com/cs109
+
+**aka "Bayesian Methods for Hackers": An introduction to Bayesian methods + probabilistic programming with a computation/understanding-first, mathematics-second point of view. All in pure Python ;)**
 http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/
 
 
-
+**Learn Data Science: Open content for self-directed learning in data science**
 http://nborwankar.github.io/LearnDataScience/
-Learn Data Science: Open content for self-directed learning in data science
 
 
+**A Neural Network Application: Predicting the Stock Market**
 http://annstock.herokuapp.com/
-A Neural Network Application: Predicting the Stock Market
+
 
 
 **thư viện python**

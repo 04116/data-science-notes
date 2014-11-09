@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-10-05T13:19:24+07:00
+
+====== ipython ======
+Created Chủ nhật 05 Tháng mười 2014
+
+
+**Cài đặt thư viện python**
+Có 2 cách để cài:
+1. Cài từ kho của ubuntu, sử dụng Synaptic để tìm kiếm và cài đặt.
+- Ưu điểm: Cài đặt đơn giản. Tự động cài đặt các gói phụ thuộc (dependence).
+- Nhược điểm: Các gói thường có phiên bản không phải là mới nhất.
+
+2. Cài đặt từ mã nguồn, sử dụng pip.
+Cài đặt: pip install tên_gói
+Gỡ cài đặt: pip uninstall tên_gói
+
+- Ưu điểm: Gói cài đặt có phiên bản mới nhất.
+- Nhược điểm: Phải biên dịch gói từ mã nguồn. pip tự động tải các gói phụ thuộc và tiến hành biên dịch.
+
+
+sudo apt-get install python-pip
+sử dụng pip hay hơn easy_install. pip là đời sau, hỗ trợ câu lệnh install, uninstall
+
+
+
+
+**2014-10-05 16:08:00**
+
+**1. Làm thế nào để run server ipython**
+**Giải pháp**
+
+	ipython notebook --profile=nbserver.
+	
+	run in : http://127.0.0.1:8888/#notebooks
+	
+**2. Open folder**
+**Giải pháp**
+	run **ipython notebook **trong folder
+
+
+
+
+===== ipython plugin =====
+
+**qgrid - SlickGrid in IPython notebook**
+https://github.com/quantopian/qgrid
+http://nbviewer.ipython.org/github/quantopian/qgrid/blob/master/qgrid_demo.ipynb
+Qgrid is an IPython extension which uses a javascript library called SlickGrid to render pandas DataFrames within an IPython notebook. It's being developed for use in Quantopian's hosted research environment, and this notebook demonstrates the current state of the project.
+
+
+
+
+
+

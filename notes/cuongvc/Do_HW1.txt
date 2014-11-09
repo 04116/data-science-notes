@@ -1,0 +1,105 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-10-22T23:19:52+07:00
+
+====== Do HW1 ======
+Created Thứ tư 22 Tháng mười 2014
+
+
+	Useful libraries for this assignment
+		+ __numpy__, for arrays
+		+ __pandas__, for data frames
+		+ __matplotlib__, for plotting
+		+ __requests__, for downloading web content
+		+ __pattern__, for parsing html and xml pages
+		 + __fnmatch__ (optional), for Unix-style string matching
+		
+	
+	
+	**chart**
+		**series**
+			**value**
+		**graphs**
+			**graph**
+				**value**
+
+	__+    url__
+	text= __requests__.get(url).text			:	get text in url
+
+	__+   xml : XML document__
+	dom = web.Element(xml)
+	result = {}
+		for graph in dom.by_tag('graph'):
+			title = _strip(graph.attributes['title'])
+			result[title] = graph.attributes['color']
+		return result
+	
+	__+   def get_poll_xml(poll_id):__
+			url = "http://charts.realclearpolitics.com/charts/" + str(poll_id) + ".xml"
+			text= requests.get(url).text
+			return text
+	
+	Trả về dữ liệu dưới dạng text của XML page.
+
+	__+ def _strip(s):__
+			"""This function removes non-letter characters from a word
+			
+			for example _strip('Hi there!') == 'Hi there'
+			"""
+			return re.sub(r'[\W_]+', '', s)
+		
+	Trả về xâu tham số bị xóa các kí tự không phải chữ số, chữ cái.
+	
+	__+ def plot_colors(xml)__
+			dom = web.Element(xml)
+			result = {}
+			for graph in dom.by_tag('graph'):
+				title = _strip(graph.attributes['title'])
+				result[title] = graph.attributes['color']
+			return result
+		
+	Trả về 1 XML document như 1 dictionary , map 1 graph title tới 1 agraph color
+	
+	
+	__+ rcp_poll_data(xml)__
+	
+	Consider the following simple xml page:
+		
+		**<chart>**
+	**    <series>**
+	**    <value xid="0">1/27/2009</value>**
+	**    <value xid="1">1/28/2009</value>**
+	**    </series>**
+	**    <graphs>**
+	**    <graph gid="1" color="#000000" balloon_color="#000000" title="Approve">**
+	**    <value xid="0">63.3</value>**
+	**    <value xid="1">63.3</value>**
+	**    </graph>**
+	**    <graph gid="2" color="#FF0000" balloon_color="#FF0000" title="Disapprove">**
+	**    <value xid="0">20.0</value>**
+	**    <value xid="1">20.0</value>**
+	**    </graph>**
+	**    </graphs>**
+	**    </chart>**
+	
+	Given this string, rcp_poll_data should return
+		result = pd.DataFrame({'date': pd.to_datetime(['1/27/2009', '1/28/2009']), 
+							   'Approve': [63.3, 63.3], 'Disapprove': [20.0, 20.0]})
+	
+
+				Obama  	Romney       date
+		1     	  47.5      	   41.5 	 	    2011-02-01
+		149   	  47.5    	   41.5 		    2011-02-02
+		348   	  47.5    	   41.5 		    2011-02-03
+
+
+
+	__+ fnmatch(l, pattern)__ : test 
+
+
+
+
+
+
+
+

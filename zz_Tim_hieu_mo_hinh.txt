@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-10-29T00:50:15+07:00
+
+====== zz Tim hieu mo hinh ======
+Created Wednesday 29 October 2014
+
+===== Data Science =====
+Các bước trong việc phân tích dữ liệu:
+
+1. transform
+2. model
+3. visualize.
+
+
+http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext
+{{./pasted_image.png}}
+
+
+
+https://github.com/twiecki/financial-analysis-python-tutorial/
+http://nbviewer.ipython.org/github/twiecki/financial-analysis-python-tutorial/tree/master/
+financial analysis
+
+
+https://github.com/fonnesbeck/statistical-analysis-python-tutorial
+Statistical Data Analysis in Python
+
+
+http://www.zipfianacademy.com/blog/post/46864003608/a-practical-intro-to-data-science
+1. ENVIRONMENT
+2. DEVELOPMENT
+3. STATISTICS
+4. MACHINE LEARNING/ALGORITHMS
+5. DATA INGESTION AND CLEANING
+6. VISUALIZATION
+7. COMPUTING AT SCALE
+8. PUTTING IT ALL TOGETHER
+
+

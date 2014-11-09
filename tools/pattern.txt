@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-10-19T08:56:46+07:00
+
+====== pattern ======
+Created Sunday 19 October 2014
+
+http://www.clips.ua.ac.be/pages/pattern
+Pattern is a web mining module for the Python programming language.
+
+It has tools for data mining (Google, Twitter and Wikipedia API, a web crawler, a HTML DOM parser), natural language processing (part-of-speech taggers, n-gram search, sentiment analysis, WordNet), machine learning (vector space model, clustering, SVM), network analysis and <canvas> visualization.
+
+The module is free, well-document and bundled with 50+ examples and 350+ unit tests.
+
+{{./pasted_image.png}}
+
+
+http://www.clips.ua.ac.be/pages/pattern-web
