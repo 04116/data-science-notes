@@ -20,3 +20,12 @@ Created Chủ nhật 05 Tháng mười 2014
 
 
 
+Nội dung:
++ Xem xét giải pháp back-end và iOs( có sử dụng được socket.io không)
++ Thống nhất database và dataflow
++ Phân chia và deadline công việc.
+Thành viên tham dự:<br>
++ Anh Thành
++ Anh Thịnh
++ Anh Hiệu
++ Cường

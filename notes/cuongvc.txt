@@ -13,3 +13,74 @@ Created Chủ nhật 28 Tháng chín 2014
 	+ Chuẩn bị hw1
 	
 	
+HW0:
+	+ NumPy
+
+HW1:
+	Same mean, variance, correlation, and linear regression line
+
+
+	__Data Types__
+	
+	1996
+		+ ID
+		+ Temporal
+		+ 2D(map)
+		+ 3D(shaped)
+		+ nD(relational)
+		+ Tree(hierarchical)
+		+ Network(graphs)
+		+ Others?
+		
+	2013
+		+ tables
+		+ networks
+		+ text/logs
+	
+	__Type and Semantics__
+		+ Semantics
+			the real-world meaning
+		+ Type
+			quy mo cua cac phep do
+	__Data Type:__
+	
+		+ Nominal(N)
+			=, !=
+		+ Ordinal(O)
+			=, !=, >, <
+			small, medium, large
+		+ Quantitative(Q)
+			Có thể thực hiện các thao tác số học
+			vd: 21cm, 32inch
+			+ Q-Interval
+				=, !=, >, <, +, -
+				Date, location
+			+ Q-Ratio
+				=, !=, >, <, +, -, *, /
+				Length, temp, Mass
+
+	semantics: tiêu đề các cột
+	Item: nội dung các hàng
+	
+	
+	__Data vs. Conceptual model__
+		Data model là mô tả dữ liệu ở mức thấp: float, integer
+		Conceptual model: mo ta du lieu duoi dang ngu nghia 
+			vd : 1D floats vs. temperature
+			
+	__Data Dimensions__
+		univariate data
+		bivariate data
+		trivariate data
+		multivariate data
+		
+	__Data Reduction__
+		+ Filter
+		+ Aggregation( giam chieu)
+		
+	__Mapping Data to Images__
+		+ 
+
+
+
+

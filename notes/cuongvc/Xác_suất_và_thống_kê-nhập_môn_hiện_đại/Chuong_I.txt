@@ -1,0 +1,164 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-11-06T10:12:59+07:00
+
+====== Chuong I ======
+Created Thứ năm 06 Tháng mười một 2014
+
+__Xác suất là gì?__
+
+**1.1 Xác suất là gì?**
+	**Câu đố:** 
+		3 cửa, 1 cửa quà, 2 cửa không có gì.
+		Người chơi mở 1 cửa, sau đó dẫn chương trình mở 1 cửa không có quà. Người chơi được phép đổi cửa đã chọn với cửa còn lại( chưa mở). 
+		->> người chơi có nên đổi hay không?
+		
+	**1.1.1 Xác suất của sự kiện**
+		+ Nằm trong khoảng [0, 1]
+		
+	**1.1.2 Ba tiên đề về sự nhất quán của xác suất**
+		+ Tiêu đề 1: 	0 <= P(A) <= 1
+		+ TIêu đề 2:	Gọi 'A|' là phủ định của A(trong điều kiện tài liệu không viết được kí hiệu chuẩn)
+					 P(A) + P(A|) = 1
+		+ Tiêu đề 3:
+					A, B không cùng xảy ra, P(A hợp B) = P(A) + P(B)	
+			Tổng quát:
+						P(A hợp B) = P(A) + P(B) - P(A giao B)
+	**1.1.3 Xác suất phụ thuộc vào những gì?**
+		+ Thời gian. Vd: Obama bầu cử tổng thống
+		+ Thông tin
+		+ Điều kiện
+		+ Người quan sát
+	**1.1.4 Tính xác suất bằng thống kê**
+		+ Công thức tính xác suất bằng thống kế:
+			P(A) = N(A) / N(total)
+			
+**1.2 Mô hình toán học của xác suất**
+	**1.2.1 Không gian xác suất**
+		Không gian xác suất là một khái niệm toán học nhắm trừu tượng hóa 3 tiêu đề trên về sự nhất quán của xác suất.
+
+		**Định nghĩa 1:**
+			Một không gian xác suất Ω :
+			
+	1. Một họ S các tập con của Ω, thỏa mãn các tính chất sau:
+					+ Ω thuộc S
+					  + Nếu A, B thuộc S thì A hợp B thuộc S, A giao B thuộc S, [A|] = Ω / A thuộc S.
+					
+					-> họ S là một **đại số** các tập con của Ω
+					
+					+ Ω là 1 tập vô hạn các phần tử -> đòi hỏi điều kiện Ai, i = 1, 2, 3, ... thì hợp các Ai cũng thuộc S.
+					-> nếu thêm điều kiện này, S được gọi là một **sigma-đại số.** Các phần tử của S là tập hợp con **đo được** của Ω.
+					
+	2. Hàm số thực P : S -> **R** trên S, được gọi là **phân bố xác suất** hay **độ đo xác suất** trên Ω, thỏa mãn các tính chất sau:	
+					+ Với mọi A thuộc S
+						0<=P(A)<= 1 
+					+ P(∅) = 0, P(Ω) = 1
+					+ A hợp B = ∅, P(A hợp B) = P(A) + P(B)
+						
+					  Tổng quát: Ai, i = 1, 2, 3, ... là một dãy các tập hợp con đo được không giao nhau thì:
+						P(Hợp các Ai ) = tổng các P(Ai)																			__(*)__
+						
+
+			__Ghi chú:__
+				+ Không gian xác suất Ω còn được gọi là **không gian mẫu.**
+				+ Mỗi phần tử của Ω có thể được gọi là **một sự kiện thành phần** (elementary event).
+				__+ Không nhất thiết tập con nào của Ω cũng đo được (tức là nằm trong họ S), và chúng ta sẽ chỉ quan tâm đến những tập con đo được.__
+				+ Trong toán học, một đại số là một tập hợp với các phép tính cộng, trừ, và phép nhân (không nhất thiết phải có phép chia). Các tính chất của họ S trong định nghĩa không gian xác suất khiến nó là một đại số theo nghĩa như vậy
+				 + __(*)__ là tính chất sigma của xác suất: (tính chất cộng tính vô hạn) khi có 1 dãy vô hạn các tập con không giao nhau, xác suất của hợp chúng cũng bằng tổng vô hạn các xác suất của các tập con. Tính chất sigma cho phép ta lấy giới hạn trong việc tính toán xác suất.
+				
+
+	**1.2.2 Phân bố xác suất Bernoulli**
+		+ **Không gian xác suất đơn giản nhất** mà **không tầm thường** là không gian sỉnh bởi đúng 1 sự kiện A và phủ định A của nó: Ω = {A, A}.
+		+ Phân bố Bernoulli  : p = P(A)	
+	**1.2.3 Phân bố xác suất **__đều__
+		+ Định nghĩa 1.2. Phân bố xác suất P trên không gian xác suất hữu hạn với N phần tử Ω = {A1 , . . . , AN } được gọi là phân bố **xác suất đều** nếu như 
+										__P (A1 ) = . . . = P (AN ) = 1/N .__
+	* **Ghi chú: không áp dụng cho không gian vô hạn**
+		  
+		Ví dụ: úp bộ bài, xác suất mở 1 lá bài được con "2 Cơ" là 1/52.
+		+ **Công thức để tính xác suất của một sự kiện trong một phân bố xác suất đều:**
+			 Nếu như không gian xác suất Ω với phấn bố xác suất đều có **N phần tử,** và sự kiện được biểu diễn bằng một **tập con A của Ω với k phần tử**, thì xác suất của A bằng **k/N**
+			
+			
+		__Bài tập__
+			**Bài 1.3** Có một nhóm n bạn, trong đó có hai bạn Vôva và Lily. Xếp các bạn trong nhóm thành một hàng dọc một cách ngẫu nhiên. Hỏi xác suất để Vôva ở vị trí ngay sau Lily trong hàng là bao nhiêu ?
+
+				+ Có n bạn -> có n! cách chọn xếp hàng.
+				+ Vô va đứng ngay sau Lily trong hàng -> Lily đứng các vị trí từ 1 đến n-1, Vô va đứng ngay sau Lily. 
+					Cách 1: Với mỗi vị trí đứng của Lily thì có (n-2)! cách xếp cho cả n bạn. Vậy số lượng các xếp để Vô va đứng sau Lily là (n-1) * (n-2)! = (n-1)!
+					Cách 2: Coi vova và Lily là 1 bạn(do luôn đứng trên - dưới nhau có thứ tự). Do đó lớp có n-1 bạn -> (n-1)! cách xếp.
+				+ Xác suất để Vô va đứng sau Lily là __(n-1)! / (n!) = 1/n.__
+				
+			**Bài 1.4** Một nhóm có 5 người, với 5 tên khác nhau. Mỗi người viết tên của một người khác trong nhóm một cách ngẫu nhiên vào giấy. Tính xác suất để có 2 người trong nhóm viết tên của nhau.
+
+				+ Với mỗi 1 người, có 4 cách để viết vào tờ giấy(4 người còn lại) -> số trường hợp xảy ra là 4 ^ 5.
+				
+				+ **Xét trường hợp chỉ có 2 người viết tên nhau.** Có **4 + 3 + 2 + 1 = 10** cách ghép đôi 2 người với nhau trong nhóm 5 người. Với mỗi cách ghép, trong 3 người còn lại, không được xảy ra trường hợp 1 cặp nào đó viết tên nhau. Số trường hợp thỏa mãn là 
+												__4^3 - 3 * 4.__
+								-> có 10*(4^3 - 3 * 4) trường hợp xảy ra có 2 người viết tên nhau.
+
+				**+ Xét trường hợp chỉ có 2 cặp viết tên nhau.** Số cách ghép đôi là 3 * 5 = 15 cách.(Có 5 cách tìm 4 số chứa 2 cặp. 4 số sẽ tạo ra 3 cặp. -> 15 cách).
+				
+				-> số cách để có 2 người trong nhóm viết tên nhau:
+					10*(4^3 - 3 * 4) + 15 = 535/1024.
+			**Bài 1.5**__ Giả sử trong một giải bóng đá đấu loại trực tiếp có 8 đội A,B,C,D,E,F,G,H tham gia: vòng 1 có 4 trận, vòng 2 có 2 trận, vòng 3 (vòng cuối cùng) có 1 trận. Giá sử xác suất để mỗi đội thắng mỗi trận đều là 1/2, và các đội bắt thăm để xem đội nào đấu với đội nào ở vòng đầu, các vòng sau thì được xếp theo kết quả vòng trước. Tính xác suất để đội A có đấu với đội B trong giải.__
+
+				__+ Số trường hợp xảy trong trong giải đấu là:__
+
+	**1.2.4 Mô hình xác suất với vô hạn các sự kiện**
+	
+		Mọi vấn đề xuất phát từ thực tế đều chỉ có một số hữu hạn các sự kiện thành phần. Nhưng khi mà **số sự kiện thành phần đó lớn**, thì người ta có thể dùng các **mô hình toán học với vô hạn phần tử** để biểu diễn, cho dễ hình dung và tiện tính toán.
+
+	**1.2.5 Ánh xạ giữa các không gian xác suất**
+	
+		+ Một ánh xạ φ : (Ω1 , P1 ) → (Ω2 , P2) từ một không gian xác suất (Ω1 , P1 ) vào một không gian xác suất (Ω2 , P2 ) được gọi là một **ánh xạ bảo toàn xác suất** nếu nó bảo toàn độ đo xác suất, có nghĩa là với mọi tập con B ⊂ Ω2 đo được, ta có
+									P1 ( φ^(−1) (B) ) = P2(B)
+		
+		Nếu hơn nữa, φ là một **song ánh modulo** những tập có xác suất bằng 0, có nghĩa là tồn tại các tập con A ∈ Ω1 , B ∈ Ω2 sao cho P1 (A) = P2(B) = 0 và 
+		φ : Ω1 \ A → Ω 2 \ B và B là song ánh bảo toàn xác suất), thì φ được gọi là một **đẳng cấu xác suất** , và ta nói rằng (Ω1 , P1) **đẳng cấu xác suất** với (Ω2 , P2 ).
+
+		**Định lý: **Nếu **(Ω1 , P1) là một không gian xác suất**, và **φ : Ω1 → Ω2 là một ánh xạ tùy ý**, thì **tồn tại một độ đo xác suất P2 trên Ω2,** sao cho ánh xạ **φ : (Ω1 , P1 ) → (Ω2 , P2 ) là ánh xạ bảo toàn xác suất.**
+	
+	**1.2.6 Tích của các không gian xác suất**
+		
+		+ M, N là 2 tập hợp, tích của chúng là M x N, là tập hợp các (x, y) (x thuộc M, y thuộc N).
+		+ M = (Ω1 , P1) , N = (Ω2, P2 ) là 2 không gian xác suất thì tích  Ω1 × Ω2  cũng có một độ đo xác suất P,   nếu A1 ⊂ Ω1 và A2 ⊂ Ω2 nằm trong các sigma-đại số tương ứng của P1 và P2 thì 	
+					__P (A1 × A2 ) = P1 (A1) × P2 (A2 )__
+
+
+
+		**Định lí:** Hai phép chiếu tự nhiên từ tích (Ω1, P1 ) × (Ω2, P2 ) của hai không gian xác suất xuống (Ω1 , P1 ) và (Ω2, P2 ) là hai ánh xạ bảo toàn xác suất.
+		
+		Kí hiệu Ω = {S, N }^N là không gian xác suất khi tung đồng xu N lần, mỗi sự kiện chứa S(ngửa) hoặc N(sấp).
+		
+	**1.2.7 Phân bố nhị thức**
+		
+		 +**Phân bố nhị thức** với các tham số n, p (n ∈ N, 0 ≤ p ≤ 1) là phân bố xác suất
+								__P (k) = C(k của n) * p ^ k * (1 - p) ^ (n - k)__
+			trên tập hợp Ω = {0, 1, 2, . . . , n}.
+		
+		+ Ý nghĩa của phân bố nhị thức như sau: Khi ta làm n lần một phép thử nào đó, và mỗi lần thì **xác suất xảy ra kết quả A nào đó là p** (ví dụ: một người bắn súng n lần, xác suất trúng đích mỗi lần là p), và giả sử là kết quả của các lần thử khác nhau độc lập với nhau (lần thử này không ảnh hưởng đến lần thử khác), thì tống số lần xảy ra kết quả A trong số n lần đó là một số nguyên nằm giữa 0 và n, và với mỗi k = 0, 1, 2, . . . , n, xác suất của sự kiện "số lần ra kết quả A là k" bằng 	__P (k) = C(k của n) * p ^ k * (1 - p) ^ (n - k)__
+
+		**Bài 1.8**
+			Hai vận động viên Nam và Tiến chơi một trận tennis. Ai thắng được 3 set trước thì thắng cả trận. Giả sử xác suất để Nam thắng mỗi set là 40% (để Tiến thắng mỗi set là 60%, và kết quả của set này không ảnh hưởng đến set khác). Hỏi xác suất để Nam thắng trận tennis là bao nhiêu ?
+				
+				Xét các trường hợp: tỉ số cuối cùng Nam thắng là 3-0, 3-1, 3-2
+				
+				+ tí số 3-0, xác suất là C(3 của 3) * 0.4 ^ 3 * 0.6 ^ 0 = 0.064
+				+ tỉ số 3-1, xác suất là C(3 của 4) * 0.4 ^ 3 * 0.6 ^ 1 = 0,1536
+						 + tỉ số 3-2, xác suất là C(3 của 5) * 0.4 ^ 3 * 0.6 ^ 2 = 0,2304
+
+				-> xác suất để Nam thắng trận tenis là  0.064 + 0,1536 +  0,2304 = 0,448.
+
+
+
+
+
+
+
+
+
+
+
+
+
